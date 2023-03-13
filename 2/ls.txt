@@ -1,0 +1,7 @@
+total 40
+-rw-rw-r-- 1 maxoffon maxoffon   442 мар 13 16:53 1.py
+-rw-rw-r-- 1 maxoffon maxoffon   120 мар 13 17:04 2.py
+-rw-rw-r-- 1 maxoffon maxoffon   102 мар 13 00:36 app.py
+-rw-rw-r-- 1 maxoffon maxoffon     0 мар 13 17:07 ls.txt
+-rw-rw-r-- 1 maxoffon maxoffon 23465 мар 13 00:37 output_file.txt
+drwxrwxr-x 4 maxoffon maxoffon  4096 мар 13 00:21 venv
