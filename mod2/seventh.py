@@ -2,23 +2,28 @@ from flask import Flask
 from datetime import datetime
 
 
+storage = {}
 app = Flask(__name__)
-
-
 if __name__ == '__main__':
     app.run(__name__)
 
 
-storage = {}
+def check_correct_date(year, month, day):
+    return 0 < year <= datetime.now().year and 0 < month <= 12 and 0 < day <= 31
+
+
 @app.route('/add/<date>/<int:number>')
 def add(date, number):
     year = date[:4]
     month = date[4:6]
     day = date[6:]
+    if not (check_correct_date(int(year), int(month), int(day))):
+        return 'Некорректная дата'
     storage.setdefault(year, [{}, 0])[0].setdefault(month, 0)
     storage[year][0][month] += number
     storage[year][1] += number
     return f'{day}.{month}.{year} было потрачено {number}'
+
 
 @app.route('/calculate/<int:year>')
 def calc_year(year):
