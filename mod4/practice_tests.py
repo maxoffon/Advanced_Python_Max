@@ -13,7 +13,6 @@ class Test(unittest.TestCase):
                                                       "phone": 9501936612,
                                                       "address": "aaa"})
         new_data = unquote(data.get_data(as_text=True))
-        print(new_data)
         self.assertEqual(400, data.status_code)
         self.assertTrue("'name': ['This field is required.']" in new_data)
 
@@ -22,7 +21,6 @@ class Test(unittest.TestCase):
                                                       "phone": 9501936612,
                                                       "name": "aaa"})
         new_data = unquote(data.get_data(as_text=True))
-        print(new_data)
         self.assertEqual(400, data.status_code)
         self.assertTrue("'address': ['This field is required.']" in new_data)
 
@@ -31,7 +29,6 @@ class Test(unittest.TestCase):
                                                       "name": '9501936612',
                                                       "address": "aaa"})
         new_data = unquote(data.get_data(as_text=True))
-        print(new_data)
         self.assertEqual(400, data.status_code)
         self.assertTrue("'phone': ['This field is required.']" in new_data)
 
