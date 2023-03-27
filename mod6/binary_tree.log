@@ -1,0 +1,9 @@
+INFO: Visiting node with value 1
+DEBUG: Node with value 1 has child node on the left with value 2
+DEBUG: Node with value 1 has child node on the right with value 3
+INFO: Visiting node with value 2
+DEBUG: Node with value 2 has child node on the left with value 4
+DEBUG: Node with value 2 has child node on the right with value 5
+INFO: Visiting node with value 3
+INFO: Visiting node with value 4
+INFO: Visiting node with value 5
