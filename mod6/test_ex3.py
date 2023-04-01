@@ -17,6 +17,22 @@ class MyTestCase(unittest.TestCase):
         string = json.dumps(dictionary)
         self.assertTrue(string in [item.replace('\n', '') for item in self.f.readlines()])
 
+    def test_json_no_quotes_dog(self):
+        self.logger.info('Message dog')
+        dictionary = {"time": f"{datetime.datetime.now().strftime('%H:%M:%S')}",
+                      "level": "INFO",
+                      "message": "Message dog"}
+        string = json.dumps(dictionary)
+        self.assertTrue(string in [item.replace('\n', '') for item in self.f.readlines()])
+
+    def test_json_no_quotes_warning(self):
+        self.logger.warning('Message')
+        dictionary = {"time": f"{datetime.datetime.now().strftime('%H:%M:%S')}",
+                      "level": "WARNING",
+                      "message": "Message"}
+        string = json.dumps(dictionary)
+        self.assertTrue(string in [item.replace('\n', '') for item in self.f.readlines()])
+
     def test_json_double_quotes(self):
         self.logger.info('"')
         dictionary = {"time": f"{datetime.datetime.now().strftime('%H:%M:%S')}",

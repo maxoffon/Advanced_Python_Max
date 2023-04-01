@@ -1,2 +1,4 @@
-{"time": "17:24:20", "level": "INFO", "message": "\""}
-{"time": "17:24:20", "level": "INFO", "message": "Message"}
+{"time": "16:19:46", "level": "INFO", "message": "\""}
+{"time": "16:19:46", "level": "INFO", "message": "Message"}
+{"time": "16:19:46", "level": "INFO", "message": "Message dog"}
+{"time": "16:19:46", "level": "WARNING", "message": "Message"}
