@@ -1,0 +1,6 @@
+INFO | calculator_utils | 2023-04-02 23:39:51,653 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-02 23:39:51,654 | 8 | Operation's result: 3
+INFO | calculator_utils | 2023-04-02 23:39:58,239 | 39 | Division operation is starting
+INFO | calculator_utils | 2023-04-02 23:39:58,240 | 41 | Operation's result: 1.0
+INFO | calculator_utils | 2023-04-02 23:40:03,415 | 39 | Division operation is starting
+WARNING | calculator_utils | 2023-04-02 23:40:03,415 | 47 | You can't divide by zero

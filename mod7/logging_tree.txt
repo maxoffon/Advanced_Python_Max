@@ -1,0 +1,109 @@
+<--""
+   Level WARNING
+   |
+   o<--"calculator_app"
+   |   Level DEBUG
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_debug.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B30D0>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_notset.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B2A10>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_info.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B2390>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_critical.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B3890>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_error.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B3810>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_warning.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B34D0>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler Stream <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+   |     Level DEBUG
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |
+   o<--"calculator_utils"
+   |   Level DEBUG
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_debug.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B30D0>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_notset.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B2A10>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_info.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B2390>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_critical.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B3890>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_error.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B3810>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler File 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\calc_warning.log'
+   |     Level DEBUG
+   |     Filter <app_calc.CustomFilter object at 0x000001E8F11B34D0>
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler Stream <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+   |     Level DEBUG
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |   Handler TimedRotatingFile 'C:\\Users\\Maxoffon\\Desktop\\PyAdvRepo\\mod7\\utils.log' when='H' interval=36000 backupCount=0
+   |     Level INFO
+   |     Filter <app_calc.AsciiFilter object at 0x000001E8F11B3910>
+   |     Formatter fmt='%(levelname)s | %(name)s | %(asctime)s | %(lineno)s | %(message)s' datefmt=None
+   |
+   o<--"charset_normalizer"
+   |   Level NOTSET so inherits level WARNING
+   |   Handler <NullHandler (NOTSET)>
+   |
+   o<--"requests"
+   |   Level NOTSET so inherits level WARNING
+   |   Handler <NullHandler (NOTSET)>
+   |
+   o<--"urllib3"
+       Level NOTSET so inherits level WARNING
+       Handler <NullHandler (NOTSET)>
+       |
+       o<--"urllib3.connection"
+       |   Level NOTSET so inherits level WARNING
+       |
+       o<--"urllib3.connectionpool"
+       |   Level NOTSET so inherits level WARNING
+       |
+       o<--"urllib3.poolmanager"
+       |   Level NOTSET so inherits level WARNING
+       |
+       o<--"urllib3.response"
+       |   Level NOTSET so inherits level WARNING
+       |
+       o<--[urllib3.util]
+           |
+           o<--"urllib3.util.retry"
+               Level NOTSET so inherits level WARNING
