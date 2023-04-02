@@ -90,12 +90,12 @@ dict_conf = {
     "loggers": {
         "calculator_app": {
             "level": "DEBUG",
-            "handlers": ["file_debug", "file_notset", "file_info",
+            "handlers": ["server", "file_debug", "file_notset", "file_info",
                          "file_critical", "file_error", "file_warning", "console"]
         },
         "calculator_utils": {
             "level": "DEBUG",
-            "handlers": ["file_debug", "file_notset", "file_info",
+            "handlers": ["server", "file_debug", "file_notset", "file_info",
                          "file_critical", "file_error", "file_warning", "console", "utils"]
         }
     },
