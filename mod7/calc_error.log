@@ -1,2 +1,9 @@
 ERROR | calculator_app | 2023-04-02 23:40:03,416 | 67 | Wrong format
 ERROR | calculator_app | 2023-04-02 23:40:08,378 | 67 | Wrong format
+ERROR | calculator_utils | 2023-04-04 23:29:22,290 | 11 | Operation is impossible
+ERROR | calculator_app | 2023-04-04 23:29:24,348 | 67 | Wrong format
+ERROR | calculator_utils | 2023-04-04 23:39:38,984 | 11 | Operation is impossible
+ERROR | calculator_app | 2023-04-04 23:39:41,059 | 67 | Wrong format
+ERROR | calculator_app | 2023-04-04 23:43:21,280 | 67 | Wrong format
+ERROR | calculator_app | 2023-04-04 23:47:00,902 | 67 | Wrong format
+ERROR | calculator_app | 2023-04-04 23:47:25,096 | 67 | Wrong format

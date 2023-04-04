@@ -6,3 +6,27 @@ INFO | calculator_utils | 2023-04-02 23:39:58,239 | 39 | Division operation is s
 INFO | calculator_utils | 2023-04-02 23:39:58,240 | 41 | Operation's result: 1.0
 INFO | calculator_app | 2023-04-02 23:40:03,370 | 61 | The expression is received: 3 / 0
 INFO | calculator_utils | 2023-04-02 23:40:03,415 | 39 | Division operation is starting
+INFO | calculator_app | 2023-04-04 23:25:56,990 | 61 | The expression is received: 2 + 2
+INFO | calculator_utils | 2023-04-04 23:25:59,085 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:26:01,147 | 8 | Operation's result: 4
+INFO | calculator_app | 2023-04-04 23:28:16,521 | 61 | The expression is received: 2 + 2
+INFO | calculator_utils | 2023-04-04 23:28:18,666 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:28:20,731 | 8 | Operation's result: 4
+INFO | calculator_app | 2023-04-04 23:29:18,111 | 61 | The expression is received: 2 + f
+INFO | calculator_utils | 2023-04-04 23:29:20,203 | 6 | Addition operation is starting
+INFO | calculator_app | 2023-04-04 23:31:47,349 | 61 | The expression is received: 2 + 9
+INFO | calculator_utils | 2023-04-04 23:31:49,443 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:31:51,492 | 8 | Operation's result: 11
+INFO | calculator_app | 2023-04-04 23:39:34,744 | 61 | The expression is received: 2 + d
+INFO | calculator_utils | 2023-04-04 23:39:36,873 | 6 | Addition operation is starting
+INFO | calculator_app | 2023-04-04 23:46:05,843 | 61 | The expression is received: 2 + 2
+INFO | calculator_utils | 2023-04-04 23:46:07,959 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:46:10,057 | 8 | Operation's result: 4
+INFO | calculator_app | 2023-04-04 23:47:18,902 | 61 | The expression is received: 2 / 0
+INFO | calculator_utils | 2023-04-04 23:47:20,981 | 39 | Division operation is starting
+INFO | calculator_app | 2023-04-04 23:50:08,622 | 61 | The expression is received: 2 + 1
+INFO | calculator_utils | 2023-04-04 23:50:10,748 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:50:12,799 | 8 | Operation's result: 3
+INFO | calculator_app | 2023-04-04 23:50:32,827 | 61 | The expression is received: 3 - 1
+INFO | calculator_utils | 2023-04-04 23:50:34,903 | 17 | Subtracion operation is starting
+INFO | calculator_utils | 2023-04-04 23:50:36,956 | 19 | Operation's result: 2

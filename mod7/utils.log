@@ -1,6 +1,18 @@
-INFO | calculator_utils | 2023-04-02 23:39:51,653 | 6 | Addition operation is starting
-INFO | calculator_utils | 2023-04-02 23:39:51,654 | 8 | Operation's result: 3
-INFO | calculator_utils | 2023-04-02 23:39:58,239 | 39 | Division operation is starting
-INFO | calculator_utils | 2023-04-02 23:39:58,240 | 41 | Operation's result: 1.0
-INFO | calculator_utils | 2023-04-02 23:40:03,415 | 39 | Division operation is starting
-WARNING | calculator_utils | 2023-04-02 23:40:03,415 | 47 | You can't divide by zero
+INFO | calculator_utils | 2023-04-04 23:25:59,085 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:26:01,147 | 8 | Operation's result: 4
+INFO | calculator_utils | 2023-04-04 23:28:18,666 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:28:20,731 | 8 | Operation's result: 4
+INFO | calculator_utils | 2023-04-04 23:29:20,203 | 6 | Addition operation is starting
+ERROR | calculator_utils | 2023-04-04 23:29:22,290 | 11 | Operation is impossible
+INFO | calculator_utils | 2023-04-04 23:31:49,443 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:31:51,492 | 8 | Operation's result: 11
+INFO | calculator_utils | 2023-04-04 23:39:36,873 | 6 | Addition operation is starting
+ERROR | calculator_utils | 2023-04-04 23:39:38,984 | 11 | Operation is impossible
+INFO | calculator_utils | 2023-04-04 23:46:07,959 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:46:10,057 | 8 | Operation's result: 4
+INFO | calculator_utils | 2023-04-04 23:47:20,981 | 39 | Division operation is starting
+WARNING | calculator_utils | 2023-04-04 23:47:23,052 | 47 | You can't divide by zero
+INFO | calculator_utils | 2023-04-04 23:50:10,748 | 6 | Addition operation is starting
+INFO | calculator_utils | 2023-04-04 23:50:12,799 | 8 | Operation's result: 3
+INFO | calculator_utils | 2023-04-04 23:50:34,903 | 17 | Subtracion operation is starting
+INFO | calculator_utils | 2023-04-04 23:50:36,956 | 19 | Operation's result: 2
