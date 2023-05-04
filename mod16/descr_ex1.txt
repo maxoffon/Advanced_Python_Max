@@ -1,0 +1,7 @@
+movie_cast -> actors - один ко многим
+movie_cast -> movie - один ко многим
+oscar_awarded -> movie - один ко многим
+movie_director -> movie - один к многим
+movie_director -> director - один ко многим
+(actors -> movie - многие ко многим)
+(movie -> director - многие ко многим)

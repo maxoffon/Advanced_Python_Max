@@ -61,40 +61,34 @@ def update_work_schedule(c: sqlite3.Cursor) -> None:
               "FROM table_friendship_schedule AS t1 "
               "INNER JOIN table_friendship_employees as t2 "
               "ON t1.employee_id = t2.id")
-    res = [item for item in c.fetchall() if get_weekday(item[1]) == SPORTS[item[3]]]
+    data = c.fetchall()
+    res = [item for item in data if get_weekday(item[1]) == SPORTS[item[3]]]
     changed_indexes = []
-    possible_to_change = True
-    for i in range(len(res)):
+    for i in range(len(res) - 1):
+        possible_to_change = True
         if i in changed_indexes:
             continue
         j = len(res) - 1
         shift_from = get_shift_number(get_date(res[i][1]))
-        shift_to = get_shift_number(get_date(res[j][1])) # Чтобы работник не повторялся в одной смене дважды
-        while not (not (shift_from <= res[j][0] <= shift_from + 9)
-                   and not (shift_to <= res[i][0] <= shift_to + 9) # Чтобы работник не повторялся в одной смене дважды
+        shift_to = get_shift_number(get_date(res[j][1]))
+        while not (not((shift_to - shift_from) % 355 < 10 )
+                   # Чтобы работник не повторялся в одной смене дважды
                    and res[j][3] != res[i][3]
                    and j not in changed_indexes):
             j -= 1
             if j == i:
                 possible_to_change = False
-                print('Нельзя разрешить конфликты всех работников. '
-                      'Меняю план в соответствии с найденными возможными перестановками')
+                print(f'Нельзя поменять работника с id {res[i][0]} и датой смены {res[i][1]}')
                 break
         if not possible_to_change:
-            for item in changes:
-                from_, date_from, to_, date_to = item
-                c.execute(req_update, (to_, from_, date_from))
-                c.execute(req_update, (from_, to_, date_to))
-            break
-        else:
-            changes.append((res[i][0], res[i][1], res[j][0], res[j][1]))
-            changed_indexes.append(j)
+            continue
+        changes.append((res[i][0], res[i][1], res[j][0], res[j][1]))
+        changed_indexes.append(j)
 
-    if possible_to_change:
-        for item in changes:
-            from_, date_from, to_, date_to = item
-            c.execute(req_update, (to_, from_, date_from))
-            c.execute(req_update, (from_, to_, date_to))
+    for item in changes:
+        from_, date_from, to_, date_to = item
+        c.execute(req_update, (to_, from_, date_from))
+        c.execute(req_update, (from_, to_, date_to))
 
 
 
